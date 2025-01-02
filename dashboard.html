@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div>
+        <button onclick="redirectToLogin()">Log out</button>
+      </div>
+    <div style="display: flex">
+      <div>
+        <h1>Dashboard</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Genre</th>
+              <th>Release Year</th>
+              <th>Rating</th>
+              <th>Book Tickets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cricket</td>
+              <td>Game</td>
+              <td>2010</td>
+              <td>8.8</td>
+              <td>
+                <button onclick="redirectToConfirmation()">Book Ticket</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Football</td>
+              <td>Game</td>
+              <td>2008</td>
+              <td>9.0</td>
+              <td>
+                <button onclick="redirectToConfirmation()">Book Ticket</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Hockey</td>
+              <td>Game</td>
+              <td>2014</td>
+              <td>8.6</td>
+              <td>
+                <button onclick="redirectToConfirmation()">Book Ticket</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Lawn tennis</td>
+              <td>Game</td>
+              <td>2019</td>
+              <td>8.6</td>
+              <td>
+                <button onclick="redirectToConfirmation()">Book Ticket</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-left: 800px; padding-left: 10px">
+        <h3>User Details</h3>
+        <button onclick="redirectToUserDetails()">Click to see user details</button>
+      </div>
+    </div>
+    <script>
+      function redirectToConfirmation() {
+        window.location.href = "confirmation.html";
+      }
+      function redirectToUserDetails() {
+        window.location.href = "userDetails.html";
+      }
+      function redirectToLogin() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
